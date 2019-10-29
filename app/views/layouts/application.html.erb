@@ -20,3 +20,24 @@
     <%= yield %>
   </body>
 </html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= full_title(yield(:title)) %></title>
+    <%#
+    メソッド呼び出しの丸カッコは省略可能。
+    最後の引数がハッシュの場合、波カッコは省略可能。
+    stylesheet_link_tag('application', { media: 'all',
+                                     'data-turbolinks-track': 'reload' })
+    %>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all',
+                               'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application',
+                               'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+    <%= yield %>
+  </body>
+</html>
