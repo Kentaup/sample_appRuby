@@ -1,0 +1,20 @@
+Ruby まとめ
+
+local server 起動
+rails server
+
+
+HTTPリクエスト	URL		アクション	用途
+GET			/users		index	すべてのユーザーを一覧するページ
+GET			/users/1	show		id=1のユーザーを表示するページ
+GET			/users/new	new		新規ユーザーを作成するページ
+POST			/users		create	ユーザーを作成するアクション
+GET			/users/1/edit	edit		id=1のユーザーを編集するページ
+PATCH		/users/1	update	id=1のユーザーを更新するアクション
+DELETE		/users/1	destroy	id=1のユーザーを削除するアクション
+
+
+git config --global http.proxy http://j117277:0mekakusi0+@cache.ccs.kogakuin.ac.jp:8080
+git config --global https.proxy http://j117277:0mekakusi0+@cache.ccs.kogakuin.ac.jp:8080
+
+git config --global --unset http.proxy
